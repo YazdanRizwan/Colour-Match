@@ -3,13 +3,15 @@ var errors = 0;
 var cardList = [
     "Red",
     "yellow",
+    "green",
+    "purple",
 ]
 
 var count = 0;
 var cardSet;
 var board = [];
 var rows = 2;
-var columns = 2;
+var columns = 4;
 var card1Selected;
 const myButton = document.getElementById("btn1");
 var card2Selected;
@@ -100,7 +102,7 @@ function update() {
     else {
         count += 1;
         console.log(count);
-        if (count === 2) {
+        if (count === 4) {
             myButton.style.display = "block";
             myButton.style.position = "absolute";
             myButton.style.left = "50%";

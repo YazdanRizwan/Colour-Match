@@ -1,18 +1,38 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Color Match</title>
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Match Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainHeader">
+        <h1>Color match game!</h1>
+        <h2>Choose for how many color you want to play it!</h2>
+        <p class="pTag">In this game, In the starting you have to memorize which color card is at which place and then you have to select two same color card!</p>
+    </div>
+    <div class="button-container">
+        <button class="button-green" onclick="myFunction()">2 color cards</button>
+        <button class="button-blue" onclick="myFunction2()">4 color cards</button>
+        <button class="button-yellow" onclick="myFunction3()">6 color cards</button>
+        <button class="button-red" onclick="myFunction4()">8 color cards</button>
+    </div>
 
-    <body>
-        <h2>Errors: <span id="errors">0</span></h2>
-        <div id="board">
-        </div>
-        <button class="btn" id="btn1" style="display: none;" onclick="window.location.href = 'index.html';">New Game</button>
-        <script src="script.js"></script>
-    </body>
+    <script>
+        function myFunction() {
+            window.open("box1.html");
+        }
+        function myFunction2() {
+            window.open("box2.html");
+        }
+        function myFunction3() {
+            window.open("box3.html");
+        }
+        function myFunction4() {
+            window.open("box4.html");
+        }
+    </script>
+</body>
 </html>
