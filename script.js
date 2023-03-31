@@ -99,8 +99,12 @@ function update() {
     }
     else {
         count += 1;
-        console.log(count);
         if (count === 2) {
+            var audio = new Audio('clapping.mp3');
+            audio.play();
+            setTimeout(function () {
+                audio.pause();
+            }, 2000);
             myButton.style.display = "block";
             myButton.style.position = "absolute";
             myButton.style.left = "50%";
